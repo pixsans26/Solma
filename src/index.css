@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ott-bg: #18181c;
+  --ott-card: #23232b;
+  --ott-accent: #e71f69;
+  --ott-text: #e0e0e0;
+  --ott-muted: #bdb6d6;
+  --ott-grad-start: #e71f69;
+  --ott-grad-end: #6400fb;
+}
+
+@layer base {
+  body {
+    @apply m-0 bg-ott-bg text-ott-text antialiased min-h-screen flex flex-col font-inter;
+  }
+
+  #root {
+    @apply flex flex-col min-h-screen w-full p-0 m-0;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbars globally but allow scrolling */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
