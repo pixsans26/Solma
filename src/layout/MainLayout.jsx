@@ -24,7 +24,7 @@ export default function MainLayout({ children }) {
     path === '/help';
 
   // Routes where we want to hide the horizontal category tabs
-  const hideTabsRoutes = ['/search', '/profile', '/downloads', '/songs', '/music-videos', '/settings', '/subscriptions', '/edit-profile', '/watchlist', '/help', '/library', '/settings/personal-info', '/settings/security', '/settings/payment', '/settings/language', '/settings/update-password'];
+  const hideTabsRoutes = ['/search', '/profile', '/downloads', '/songs', '/music-videos', '/settings', '/subscriptions', '/edit-profile', '/watchlist', '/help', '/library', '/settings/personal-info', '/settings/security', '/settings/payment', '/settings/language', '/settings/update-password', '/notifications'];
   const showTabs = !hideTabsRoutes.includes(path);
 
   // Routes that have a top carousel/hero element (no extra top padding needed)

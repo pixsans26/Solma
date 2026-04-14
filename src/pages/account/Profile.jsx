@@ -38,9 +38,11 @@ export default function Profile() {
 
         {/* Avatar */}
         <div className="relative mb-3">
-          <div className="w-[88px] h-[88px] rounded-full bg-gradient-to-br from-ott-grad-start to-ott-grad-end flex items-center justify-center text-[34px] font-bold text-white border-[3px] border-white/10 shadow-[0_0_30px_rgba(231,31,105,0.35)]">
-            {USER.name.charAt(0)}
-          </div>
+          <img 
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80" 
+            alt={USER.name}
+            className="w-[88px] h-[88px] rounded-full object-cover border-[3px] border-white/10 shadow-[0_0_30px_rgba(231,31,105,0.35)]"
+          />
           {/* Camera edit dot */}
           <button
             onClick={() => navigate("/edit-profile")}

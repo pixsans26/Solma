@@ -27,6 +27,7 @@ import HelpSupport from './pages/account/HelpSupport';
 import Checkout from './pages/account/Checkout';
 import PaymentSuccess from './pages/account/PaymentSuccess';
 import MyLibrary from './pages/account/MyLibrary';
+import Notifications from './pages/account/Notifications';
 
 // Music Player & List
 import MusicPlayer from './pages/content/MusicPlayer';
@@ -87,6 +88,7 @@ function MainFlow() {
           <Route path="/music/:type/:name" element={<MusicListPage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/library" element={<MyLibrary />} />
+          <Route path="/notifications" element={<Notifications />} />
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/watchlist" element={<Watchlist />} />
           <Route path="/help" element={<HelpSupport />} />

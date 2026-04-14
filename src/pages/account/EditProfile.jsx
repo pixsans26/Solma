@@ -52,9 +52,11 @@ export default function EditProfile() {
       {/* ── Avatar ───────────────────────────────────────────────── */}
       <div className="flex flex-col items-center py-8 gap-3">
         <div className="relative">
-          <div className="w-[96px] h-[96px] rounded-full bg-gradient-to-br from-ott-grad-start to-ott-grad-end flex items-center justify-center text-[38px] font-bold text-white border-[3px] border-white/10 shadow-[0_0_30px_rgba(231,31,105,0.35)]">
-            {form.name.charAt(0)}
-          </div>
+          <img 
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80" 
+            alt={form.name}
+            className="w-[96px] h-[96px] rounded-full object-cover border-[3px] border-white/10 shadow-[0_0_30px_rgba(231,31,105,0.35)]"
+          />
           <button className="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-ott-accent flex items-center justify-center border-2 border-ott-bg shadow-lg active:scale-90 transition-transform">
             <FiCamera className="text-white text-[13px]" />
           </button>
